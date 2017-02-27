@@ -24,12 +24,12 @@
 
 -(void)printDoctor
 {
-    NSLog(@"\n==================\n");
-    NSLog(@"Customer name: %@\n", self.doctorName);
-    NSLog(@"Customer Adress: %@\n", self.doctorSpeciality);
-    NSLog(@"Customer Phone: %@\n", self.doctorGender);
-    NSLog(@"\n==================\n");
-}
+    NSLog(@"\n============================\n");
+    NSLog(@"Doctor name: %@\n", self.staffName);
+    NSLog(@"Doctor speciality: %@\n", self.staffSpeciality);
+    NSLog(@"Doctor gendre: %c\n", self.staffGender);
+    NSLog(@"\n============================\n");
 
+}
 
 @end

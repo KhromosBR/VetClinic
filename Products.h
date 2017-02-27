@@ -27,4 +27,6 @@
 
 -(void)printProductsList;
 
+-(void)stockAlert;
+
 @end

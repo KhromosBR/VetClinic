@@ -26,6 +26,7 @@ int main(int argc, const char * argv[]) {
     
     //Customers
     //Step1 - create a customer object
+    NSLog(@"Customers\n");
     Customers* customer1 = [[Customers alloc] initWithCustomerName:@"Ricardo" customerAdress:@"Vancouver, CA "customerPhone:@"555222333" customerEmail:@"someemail@email.com"];
     
     [customer1 printCustomersList];
@@ -47,29 +48,38 @@ int main(int argc, const char * argv[]) {
     
     //*********************************************************************************
     //Doctor
-    Doctor* doctor1 = [[Doctor alloc]initWithStaffname:@"Marcus" staffSpeciality:@"Anestesy" staffGender:@"M"];
+    Doctor* doctor1 = [[Doctor alloc]initWithStaffname:@"Doctor1" staffSpeciality:@"traumatologist" staffGender:'m'];
     
-    
+    [doctor1 printDoctor];
     
     //*********************************************************************************
     
     //Services
     //Step1 - Create a service object
-    Vaccines* Vaccine1 = [[Vaccines alloc] initWithSVaccineType:@"flu" price:50.0 vaccineStock:100 vaccineUpdate:true];
+    Vaccines* vaccine1 = [[Vaccines alloc] initWithSVaccineType:@"flu" price:50.0 vaccineStock:100 vaccineUpdate:true];
     
     //Checking if the vaccines is updated
-    BOOL haveVaccineInStock = [Vaccine1 vaccineStock];
+    BOOL haveVaccineInStock = [vaccine1 vaccineStock];
     
-    if(Vaccine1.vaccineUpdated == true && haveVaccineInStock == true)
+    if(vaccine1.vaccineUpdated == true && haveVaccineInStock == true)
     {
         NSLog(@"The vaccine is already updated!");
         //Checking the vaccine stock
         
     }else
     {
-        Vaccine1.vaccineUpdated = true;
+        vaccine1.vaccineUpdated = true;
     }
     
+    //Grooming
+//    Grooming* walkingDog = [[Grooming alloc] initWithGroomingService:@"Walking Dog" price:20.00];
+//    
+//    [walkingDog print];
+    
+    //Surgery
+    Surgery* brokenBone = [[Surgery alloc] initWithSurgeryType:@"Traumathology" medicine:@"" price:100.0];
+    
+    [brokenBone needMedicine];
     
     //Step 3
     return NSApplicationMain(argc, argv);

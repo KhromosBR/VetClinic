@@ -10,10 +10,14 @@
 
 @interface Payment : NSObject
 //property
+@property BOOL payment;
 
 //Contructor
 
+-(id) initWithPaymentDone:(BOOL)paymentDone;
+
 //Methods(APis)
--(BOOL)isPaid;
+
+-(BOOL)payment;
 
 @end
