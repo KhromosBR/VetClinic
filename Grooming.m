@@ -22,4 +22,10 @@
     return self;
 }
 
+-(void)printgroomingService
+{
+    NSLog(@"Grooming service: %@\n", self.groomingService);
+    NSLog(@"Price: %@\n", self.groomingService);
+}
+
 @end

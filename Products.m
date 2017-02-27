@@ -39,4 +39,12 @@
     NSLog(@"===========================");
 }
 
+-(void)stockAlert
+{
+    if(self.productQuantity < 5)
+    {
+        NSLog(@"Your Stock is low!");
+    }
+}
+
 @end

@@ -22,9 +22,15 @@
     return self;
 }
 
--(void)applyMedicine
+-(void)needMedicine
 {
     
+    //ler medicine. se estiver vazia aplicar a pedicina.
+    
+     if(self.medicine == NULL)
+     {
+         NSLog(@"You have to apply medicine\n");
+     }
 }
 
 @end

@@ -23,6 +23,5 @@
 
 -(void)printStaffData;
 
--(void)stockAlert;
 
 @end

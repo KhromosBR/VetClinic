@@ -20,7 +20,6 @@
 
 //methods(APIs)
 
--(void)applyMedicine;
-
+-(void)needMedicine;
 
 @end

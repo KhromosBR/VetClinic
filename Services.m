@@ -32,8 +32,9 @@
 -(void)printStaffData
 {
     NSLog(@"\n==============================================\n");
-    NSLog(@"Staff Name : %f", self.price);
+    NSLog(@"Staff Name : %f\n", self.price);
     NSLog(@"\n==============================================\n");
 }
+
 
 @end
